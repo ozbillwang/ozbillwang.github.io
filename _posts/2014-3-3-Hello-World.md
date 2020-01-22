@@ -1,9 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: Neural Architecture Search for EEG classification
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+In this post I will cover what has been a major part of my thesis, Neural architecture search, and specifically its implication on EEG data classification.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
