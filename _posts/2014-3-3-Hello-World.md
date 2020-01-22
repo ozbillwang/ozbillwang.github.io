@@ -15,8 +15,8 @@ Despite all of these improvements, the outcome is always a single neural archite
  ![The AlexNet architecture]({{ site.baseurl }}/images/alexnet.png)
 *The seminal AlexNet architecture by Kriscevsky et al.* 
 
-My conjecture to these questions of course is "No!". Why should a single architecture, aimed to reach high benchmark scores, work well on various datasets? For this reason I got into the field of Neural architecture search (NAS). NAS is a means of creating neural network architecture automatically, given a dataset and a specific problem. NAS isn't a new topic and dates back to the late 80's with articles such as ... and ....  
-Recent advances in NAS (mainly by Google) have brought it to global research focus as well.  
+My conjecture to these questions of course is "No!". Why should a single architecture, aimed to reach high benchmark scores, work well on various datasets? For this reason I got into the field of Neural architecture search (NAS). NAS is a means of creating neural network architecture automatically, given a dataset and a specific problem. NAS isn't a new topic and dates back to the late 80's with articles such as [Designing Neural Networks using Genetic Algorithms](https://dl.acm.org/doi/10.5555/93126.94034).
+Recent advances in NAS (mainly by [Google](https://arxiv.org/abs/1802.01548)) have brought it to global research focus as well.  
   
 In my thesis I decided to combine my interest in Neuroscience and deep learning to create an EEG classifier, tailor made for each dataset. How did I do that? Let's dive in!  
  
