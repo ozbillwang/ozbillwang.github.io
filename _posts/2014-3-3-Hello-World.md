@@ -19,9 +19,14 @@ My conjecture to these questions of course is "No!". Why should a single archite
 Recent advances in NAS (mainly by [Google](https://arxiv.org/abs/1802.01548)) have brought it to global research focus as well.  
  
 Second, what is EEG? Electroencephalography is the action of recording a being's brain waves via electrodes attached to the scalp (externally). These signals are picked up and amplified by special receivers. There is a great interest in classifying these signals accuractely as they can be used for brain computer interfaces (BCI), where a potentially disabled human can contol his/her environment by thought alone.
+
+ ![EEG for BCI]({{ site.baseurl }}/images/eegbci.png)
+*The classic approach for BCI signal extraction. In my study CNNs were used for classification, so the "feature extraction" part is built into the network itself by the convolution operations* 
  
 In my thesis I decided to combine my interest in Neuroscience and deep learning to create an EEG classifier, tailor made for each dataset. How did I do that? Let's dive in!  
  
 ----
 
-I chose to implement a simple NAS algorithm, which turned out to work quite well on various EEG datasets. I created a genetic algorithm, which evolves CNN architectures from scratch, and returns the most competent architecture (tested on a hold-out validation set). The architectures evolved by this algorithm are simple series of layers, where layers can be either: Convolution, Dropout, BatchNorm, ELU activation function, MaxPooling or Identity.
+I chose to implement a simple NAS algorithm, which turned out to work quite well on various EEG datasets. I created a genetic algorithm, which evolves CNN architectures from scratch, and returns the most competent architecture (tested on a hold-out validation set). The architectures evolved by this algorithm are simple series of layers, where layers can be either: Convolution, Dropout, BatchNorm, ELU activation function, MaxPooling or Identity.  
+  
+The image below shows the crossover and mutation operations (as part of the genetic algorithm). Two archtiectures are placed one on top of the other and a randomly chosen "cut point" divides both archtictures to two. The resulting child architecture inherits the left side from parent (a) and its right side from parent (b).
