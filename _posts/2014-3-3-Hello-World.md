@@ -7,4 +7,7 @@ In this post I will cover what has been a major part of my thesis, Neural archit
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+First things's first, what is neural architecture search?  
+Deep learning has been gaining major traction in the past couple of years, especially thanks to AlexNet, the CNN architecture created by Krishevsky et al. which dominated the 2012 ImageNet competition, bringing Convolutional neural nets into research spotlight. Since then the best of minds have been creating new and improved deep learning architectures, be it VGGNet or ResNet which re-defined network depth, or GoogLeNet which brought the reusable "inception" module.  
+  
+Despite all of these improvements, the outcome is always a single neural architecture. The question that should be asked, though, is - "Does a single architecture fit all?", and "Will an architecture that plays well on benchmark datasets work equally well on real-world datasets"?
