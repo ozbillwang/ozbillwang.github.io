@@ -15,11 +15,31 @@ Despite all of these improvements, the outcome is always a single neural archite
  ![The AlexNet architecture]({{ site.baseurl }}/images/alexnet.png)
 *The seminal AlexNet architecture by Kriscevsky et al.* 
 
-My conjecture to these questions of course is "No!". Why should a single architecture, aimed to reach high benchmark scores, work well on various datasets? For this reason I got into the field of Neural architecture search (NAS). NAS is a means of creating neural network architecture automatically, given a dataset and a specific problem. NAS isn't a new topic and dates back to the late 80's with articles such as ... and ....  
-Recent advances in NAS (mainly by Google) have brought it to global research focus as well.  
-  
+My conjecture to these questions of course is "No!". Why should a single architecture, aimed to reach high benchmark scores, work well on various datasets? For this reason I got into the field of Neural architecture search (NAS). NAS is a means of creating neural network architecture automatically, given a dataset and a specific problem. NAS isn't a new topic and dates back to the late 80's with articles such as [Designing Neural Networks using Genetic Algorithms](https://dl.acm.org/doi/10.5555/93126.94034).
+Recent advances in NAS (mainly by [Google](https://arxiv.org/abs/1802.01548)) have brought it to global research focus as well.  
+ 
+Second, what is EEG? Electroencephalography is the action of recording a being's brain waves via electrodes attached to the scalp (externally). These signals are picked up and amplified by special receivers. There is a great interest in classifying these signals accuractely as they can be used for brain computer interfaces (BCI), where a potentially disabled human can contol his/her environment by thought alone.
+
+ ![EEG for BCI]({{ site.baseurl }}/images/eegbci.png)
+*The classic approach for BCI signal extraction. In my study CNNs were used for classification, so the "feature extraction" part is built into the network itself by the convolution operations* 
+ 
 In my thesis I decided to combine my interest in Neuroscience and deep learning to create an EEG classifier, tailor made for each dataset. How did I do that? Let's dive in!  
  
 ----
 
-I chose to implement a simple NAS algorithm, which turned out to work quite well on various EEG datasets. I created a genetic algorithm, which evolves CNN architectures from scratch, and returns the most competent architecture (tested on a hold-out validation set). The architectures evolved by this algorithm are simple series of layers, where layers can be either: Convolution, Dropout, BatchNorm, ELU activation function, MaxPooling or Identity.
+I chose to implement a simple NAS algorithm, which turned out to work quite well on various EEG datasets. I created a genetic algorithm, which evolves CNN architectures from scratch, and returns the most competent architecture (tested on a hold-out validation set). The architectures evolved by this algorithm are simple series of layers, where layers can be either: Convolution, Dropout, BatchNorm, ELU activation function, MaxPooling or Identity.  
+
+The algorithm runs for 75 generations and has a population size of 100. In each generation the best architectures (tested on a hold-out validation set) are kept with higher probability than bad ones. After this selection, the process of breeding undergoes, where children are created from the surviving architectures to return the population size to 100.  
+  
+The image below shows the crossover and mutation operations (as part of the genetic algorithm). Two archtiectures are placed one on top of the other and a randomly chosen "cut point" divides both archtictures to two. The resulting child architecture inherits the left side from parent (a) and its right side from parent (b).  
+
+ ![Crossover and mutation in EEGNAS]({{ site.baseurl }}/images/mutation_crossover.png)  
+ *Crossover in mutation in EEGNAS*  
+   
+  The algorithm, dubbed "EEGNAS", worked surprisingly well and managed to create architectures that performed on par or even beat state-of-the-art archiectures hand-designed for classifying these specific EEG datasets.  
+  
+   ![EEGNAS results]({{ site.baseurl }}/images/eegnas_results.png)  
+ *EEGNAS Results*  
+   
+ For more information, please read the full research article: <https://link.springer.com/chapter/10.1007/978-981-15-1398-5_1/>, and check out the github repo as well: <https://github.com/erap129/EEGNAS/>
+
