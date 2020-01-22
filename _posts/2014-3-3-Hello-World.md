@@ -28,5 +28,18 @@ In my thesis I decided to combine my interest in Neuroscience and deep learning 
 ----
 
 I chose to implement a simple NAS algorithm, which turned out to work quite well on various EEG datasets. I created a genetic algorithm, which evolves CNN architectures from scratch, and returns the most competent architecture (tested on a hold-out validation set). The architectures evolved by this algorithm are simple series of layers, where layers can be either: Convolution, Dropout, BatchNorm, ELU activation function, MaxPooling or Identity.  
+
+The algorithm runs for 75 generations and has a population size of 100. In each generation the best architectures (tested on a hold-out validation set) are kept with higher probability than bad ones. After this selection, the process of breeding undergoes, where children are created from the surviving architectures to return the population size to 100.  
   
-The image below shows the crossover and mutation operations (as part of the genetic algorithm). Two archtiectures are placed one on top of the other and a randomly chosen "cut point" divides both archtictures to two. The resulting child architecture inherits the left side from parent (a) and its right side from parent (b).
+The image below shows the crossover and mutation operations (as part of the genetic algorithm). Two archtiectures are placed one on top of the other and a randomly chosen "cut point" divides both archtictures to two. The resulting child architecture inherits the left side from parent (a) and its right side from parent (b).  
+
+ ![Crossover and mutation in EEGNAS]({{ site.baseurl }}/images/mutation_crossover.png)  
+ *Crossover in mutation in EEGNAS*  
+   
+  The algorithm, dubbed "EEGNAS", worked surprisingly well and managed to create architectures that performed on par or even beat state-of-the-art archiectures hand-designed for classifying these specific EEG datasets.  
+  
+   ![EEGNAS results]({{ site.baseurl }}/images/eegnas_results.png)  
+ *EEGNAS Results*  
+   
+ For more information, please read the full research article: <https://link.springer.com/chapter/10.1007/978-981-15-1398-5_1/>, and check out the github repo as well: <https://github.com/erap129/EEGNAS/>
+
