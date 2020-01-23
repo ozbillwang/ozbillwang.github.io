@@ -15,14 +15,15 @@ Perhaps the most popular classical, non-DL method for TSC is the combination of 
 Another popular non-DL approach is the manual extraction of features from time series samples. These are static properties, such as skewness, variance, seasonality rate and more. All of these are fed into a traditional classifier, such as a decision tree, which makes the decision based on the aggregated information received as the features.
 These baselines have been shown to be a pretty hard baseline to beat and we will test several DL algorithms to see how they match up to the task.  
   
-The algorithms tested are:  
-  * Residual convolutional neural network (Resnet): defined by the residual skip connections going from lower to higher layers in the network.
-  * MLP (Multilayer perceptron): A simple neural network contaitning three fully connected layers.
-  * FCN (Fully convolutional neural network): Three successive convolutional layers with Batchnorm and dropout between each layer. Ended by a global pooling layer + softmax for final classification
-  * Time LeNet (tlenet): A simple CNN architecture resembling LeNet by Lecunn et al. They used several data augmentation techniques to artificially increase the amount of training data.
-  * Multi-scale CNN (MCNN): A simple CNN architecture with an integral pre-processing stage in the form of frequency smoothing and sub-sampling.
-  * Multi-channel deep CNN (MCDCNN): A CNN for multivariate TSC. The first layer consists of different convolutional filters applied separately to each input channel. The outputs of these filters are later concatenated and fed through another convolutional layer, followed by a softmax activation function.
-  * Convolutional neural network (CNN): 
+The TSC architectures tested are:  
+  * **Residual convolutional neural network (Resnet)**: defined by the residual skip connections going from lower to higher layers in the network.
+  * **Multilayer perceptron (MLP)**: A simple neural network contaitning three fully connected layers.
+  * **Fully convolutional neural network (FCN)**: Three successive convolutional layers with Batchnorm and dropout between each layer. Ended by a global pooling layer + softmax for final classification
+  * **Time LeNet (tlenet)**: A simple CNN architecture resembling LeNet by Lecunn et al. They used several data augmentation techniques to artificially increase the amount of training data.
+  * **Multi-scale CNN (MCNN)**: A simple CNN architecture with an integral pre-processing stage in the form of frequency smoothing and sub-sampling.
+  * **Multi-channel deep CNN (MCDCNN)**: A CNN for multivariate TSC. The first layer consists of different convolutional filters applied separately to each input channel. The outputs of these filters are later concatenated and fed through another convolutional layer, followed by a softmax activation function.
+  * **Convolutional neural network (CNN)**: Similar to MCDCNN, but here the first convolutional layer receives all input variables as input, thus creating a weighted sum of the input (instead of receiving each input variable separately). 
+  
 
 
 
