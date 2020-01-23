@@ -29,12 +29,12 @@ The TSC methods tested are:
    
 To test all of the above approaches, I conducted a large-scale comparison using 22 multivariate time series classification datasets.  These are some statistics regarding the data:  
 
-![TS_datasets]({{ site.baseurl }}/images/TS_classification/TS_datasets.png)  
+![TS_datasets]({{ site.baseurl }}/images/TS_datasets.png)  
 
 And below are the results for the different algorithms applied on classification of the different datasets. Shown are rankings of each algorithm compared to the others, for each dataset. Additionally shown is a critical different diagram, created by calculating the wilcoxon-holms post-analysis test for each pair of classifiers, with \(alpha=0.05\).
 
-![TS_rankings]({{ site.baseurl }}/images/TS_classification/TS_rankings.png)  
-![TS_rankings]({{ site.baseurl }}/images/TS_classification/critical_diff.png)  
+![TS_rankings]({{ site.baseurl }}/images/TS_rankings.png)  
+![TS_rankings]({{ site.baseurl }}/images/critical_diff.png)  
   
 To conclude this study, I clearly showed the power of automatic neural architecture search. Using the SOTA NAS method for image classification (NSGA-Net), I showed that NAS is applicable to the time series domain as well. In addition, because of the fact that the architectures created in NSGA-Net contain basic building blocks which were shown to work well in the field of image classification, I conclude that these building blocks are successful for classifying time series data as well.
 The relative success of EEGNAS, the simple NAS method developed in my thesis, also shows the power of NAS. A 10-layer CNN automatically generated in about 1 GPU day was able to outperform almost all of the hand-designed TSC models created in the past years.
