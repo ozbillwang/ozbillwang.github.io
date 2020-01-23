@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Deep learning for time series classification
