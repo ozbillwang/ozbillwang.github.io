@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep learning for time series classification
+title: Deep learning explainability for EEG data
 ---
 
 Can deep learning models be explained on non-visual data such as EEG brain scans? In this post I will try to find out.
