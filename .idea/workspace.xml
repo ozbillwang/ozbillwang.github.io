@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1518cb63-c470-4807-b358-f3d7172764b7" name="Changes" comment="change website template">
+      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/ui-text.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/cloudflare_analytics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/commentbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/ext-css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/ext-js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/fb-comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/footer-minimal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/footer-scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/giscus-comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/google_analytics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/gtag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/gtm_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/gtm_head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/matomo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/readtime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/social-networks-links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/social-share.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/staticman-comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/staticman-comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/utterances-comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/minimal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2020-02-26-flake-it-till-you-make-it.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2020-02-28-test-markdown.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aboutme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/beautifuljekyll-minimal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/beautifuljekyll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap-social.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/pygment_highlights.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/staticman.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/404-southpark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/avatar-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bgimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/hello_world.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/install-steps.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/path.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/beautifuljekyll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/staticman.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beautiful-jekyll-theme.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticman.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/disqus.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/disqus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/meta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/svg-icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-10-31-DL_explainability_EEG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-5-1-EEGNAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-1-23-DL_TS_classification.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-2-28-SoupNAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_highlights.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_svg-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/EEG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/EEG_perturbations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/SoupNAS_blocks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/TS_datasets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/TS_rankings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/alexnet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bci_iv_2b_desynch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bowl-of-soup-png-3-transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/config.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/critical_diff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/deconv_EEG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eegbci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eegnas_results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first-post.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jekyll-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jekyll-now-theme-screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/linear_results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mutation_crossover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/neurons.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/step1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/stock_market.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EDUDJs048gW70syFcoJz9AkMyf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1518cb63-c470-4807-b358-f3d7172764b7" name="Changes" comment="" />
+      <created>1662129528445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662129528445</updated>
+      <workItem from="1662129529828" duration="822000" />
+      <workItem from="1662305644492" duration="604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
