@@ -1,18 +1,28 @@
 ---
 layout: page
 ---
-<section id="main" class="wrapper style1">
-  <header class="major">
-      <h2>Blog</h2>
-  </header>
-  {% for e in site.medium_posts %}
-    <h2>{{ e.title }}</h2>
-    <p>{{ e.feed_content }}</p>
-  {% endfor %}
-<section class="special">
-  <ul class="actions">
-  <li><a href="{{ site.baseurl }}{{ e.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-  </ul>
-</section>
+<ul class="posts-list list-unstyled" role="list">
+  {% for e in site.medium_posts_json %}
+  <li class="post-preview">
+    <a href="{{ e.link | absolute_url }}">
+      <h2 class="post-title">{{ e.title | strip_html }}</h2>
+    </a>
 
-<h2> Latest Blog Posts </h2>
+    <p class="post-meta">
+      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      Posted on {{ e.date | date: date_format }}
+    </p>
+
+    <div class="post-image post-image-normal">
+      <a href="{{ e.link | absolute_url }}" aria-label="Thumbnail">
+        <img src="{{ e.image | absolute_url }}" alt="Post thumbnail">
+      </a>
+    </div>
+
+    <div class="post-entry">
+      {% assign excerpt_length = site.excerpt_length | default: 50 %}
+      {{ e.description | truncatewords: excerpt_length }}
+      <a href="{{ e.link | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+    
+  {% endfor %}
