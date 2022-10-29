@@ -283,7 +283,10 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
-  - [vendor]
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 plugins:
   - jekyll-paginate
