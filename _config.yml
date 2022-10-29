@@ -297,7 +297,3 @@ plugins:
 
 collections:
   - medium_posts_json
-
-
-include:
-  - .nojekyll
