@@ -6,9 +6,6 @@ gem "feedjira"
 gem 'uri'
 gem 'json'
 gem 'nokogiri'
-# group :jekyll_plugins do
-#     gem "jekyll-display-medium-posts"
-#   end
 
 gemspec
 
