@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master # or master before October 2020
-    schedule:
-      - cron: "0 0 * * *"
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   github-pages:
