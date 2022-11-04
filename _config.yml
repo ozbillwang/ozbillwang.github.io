@@ -52,14 +52,14 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "erap129@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: eladrap
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  # facebook: eladrap
   github: erap129
   # patreon: DeanAttali
   # youtube: c/daattali
   medium: erap129
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: "elad-rapaport-78275615a"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
