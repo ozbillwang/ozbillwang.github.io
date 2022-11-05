@@ -19,6 +19,12 @@ layout: page
       </a>
     </div>
 
+    <div class="post-image post-image-small">
+      <a href="{{ e.link | absolute_url }}" aria-label="Thumbnail">
+        <img src="{{ e.image | absolute_url }}" alt="Post thumbnail">
+      </a>
+    </div>
+
     <div class="post-entry">
       {% assign excerpt_length = site.excerpt_length | default: 50 %}
       {{ e.description | truncatewords: excerpt_length }}
