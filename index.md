@@ -28,8 +28,8 @@ Hello, I'm Bill Wang, and I bring a diverse range of skills and expertise to the
 * 
 * **Strong Linux Background**: My proficiency in Linux provides a solid foundation for managing and securing various systems and environments.
 
-Cloud Proficiency (AWS and Azure): I have in-depth knowledge of both AWS and Azure cloud platforms, making me adaptable to various cloud environments.
-
-APN (Amazon Partner Network) Involvement: My experience extends to working within the Amazon Partner Network, ensuring a deep understanding of AWS technologies.
-
-Training and Coaching: I'm not only skilled in these technologies but also passionate about sharing my knowledge through training and coaching, helping individuals and teams reach their full potential.
+* **Cloud Proficiency (AWS and Azure)**: I have in-depth knowledge of both AWS and Azure cloud platforms, making me adaptable to various cloud environments.
+* 
+* **APN (Amazon Partner Network) Involvement**: My experience extends to working within the Amazon Partner Network, ensuring a deep understanding of AWS technologies.
+* 
+* **Training and Coaching**: I'm not only skilled in these technologies but also passionate about sharing my knowledge through training and coaching, helping individuals and teams reach their full potential.
