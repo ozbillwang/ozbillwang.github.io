@@ -22,7 +22,7 @@ author: Bill Wang
 navbar-links:
   Home: "index"
   Blog Posts: "blogposts"
-  Publications: "publications"
+  # Publications: "publications"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
