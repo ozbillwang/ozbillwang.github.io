@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: Elad Rapaport
+title: Bill Wang
 
 # Your name to show in the footer
-author: Elad Rapaport
+author: Bill Wang
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -26,7 +26,7 @@ navbar-links:
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
-  # Author's home: "https://deanattali.com"
+  # Author's home: "https://ahead.guru"
 
 ################
 # --- Logo --- #
@@ -51,15 +51,16 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "erap129@gmail.com"
+  email: "ozbillwang@gmail.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  # facebook: eladrap
-  github: erap129
-  # patreon: DeanAttali
-  # youtube: c/daattali
-  medium: erap129
+  # facebook: ozbillwang
+  github: ozbillwang
+  twitter: ozbillwang
+  # patreon: ozbillwang
+  # youtube: c/ozbillwang
+  medium: ozbillwang
 #  reddit: yourname
-  linkedin: "elad-rapaport-78275615a"
+  linkedin: "xbillwang/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -95,7 +96,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "erap129.github.io"
+url-pretty: "ozbillwang.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -248,7 +249,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Australia/Sydney"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
