@@ -1,4 +1,4 @@
-Ref: [How I Built a Website Integrating Medium Articles — Using Jekyll and GitHub Pages[(https://betterprogramming.pub/how-i-built-a-website-integrated-with-medium-using-jekyll-and-github-pages-c8f505e3b9e3)
+Ref: [How I Built a Website Integrating Medium Articles — Using Jekyll and GitHub Pages](https://betterprogramming.pub/how-i-built-a-website-integrated-with-medium-using-jekyll-and-github-pages-c8f505e3b9e3)
 
 [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
