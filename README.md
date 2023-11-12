@@ -1,4 +1,26 @@
+# Quick Guide
+
 Ref: [How I Built a Website Integrating Medium Articles — Using Jekyll and GitHub Pages](https://betterprogramming.pub/how-i-built-a-website-integrated-with-medium-using-jekyll-and-github-pages-c8f505e3b9e3)
+
+### Target files which you need update with your details
+
+* [_config.yml](_config.yml) - Replace with your details 
+* [_plugins/jekyll-display-medium-posts-json.rb](_plugins/jekyll-display-medium-posts-json.rb) - update with your medium profile 
+* [assets/img/me_formal_face_small.jpg](assets/img/me_formal_face_small.jpg) - replace with your photo 
+* [favicon.ico](favicon.ico) - replace with your photo, could be same as [assets/img/me_formal_face_small.jpg](assets/img/me_formal_face_small.jpg) 
+* [index.md](index.md) - Update your introduction with your own information
+* [publications.md](publications.md) - Update with your publications
+
+### Check Github action jobs.
+
+There should be two jobs, and both need be successful
+
+* pages-build-development
+* Build and deploy Jekyll site to GitHub Pages
+
+### Access your website
+
+https://<your_github_id>.github.io
 
 [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
