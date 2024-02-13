@@ -22,6 +22,9 @@ There should be two jobs, and both need be successful
 
 https://<your_github_id>.github.io
 
+Original readme from upstream
+----
+
 [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
 # Beautiful Jekyll
