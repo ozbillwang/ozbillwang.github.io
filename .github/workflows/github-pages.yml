@@ -23,7 +23,7 @@ jobs:
         token: ${{ secrets.JEKYLL_PAT }}
         target_branch: 'gh-pages'
         pre_build_commands: |
-          gem update --system 3.2.3
+          gem update --system 3.5.17
           gem install bundler
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
