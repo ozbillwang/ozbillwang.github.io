@@ -11,29 +11,36 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - name: Fix repository ownership issue
-        run: git config --global --add safe.directory /github/workspace
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev
-          curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
-          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-          echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-          source ~/.bashrc
-          rbenv install 3.1.2  # You can change the version as needed
-          rbenv global 3.1.2
-          gem update --system
-      - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
-        with:                                # Some relative inputs of your action
-          token: ${{ secrets.JEKYLL_PAT }}
-          target_branch: 'gh-pages'
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Fix repository ownership issue
+      run: git config --global --add safe.directory /github/workspace
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev
+        curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
+        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+        echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+        source ~/.bashrc
+        rbenv install 3.1.2  # You can change the version as needed
+        rbenv global 3.1.2
+        gem update --system
+
+    - name: Ensure rbenv is available in the current session
+      shell: bash -l {0}
+      run: |
+        rbenv rehash
+        ruby -v
+        gem -v
+    - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
+      with:                                # Some relative inputs of your action
+        token: ${{ secrets.JEKYLL_PAT }}
+        target_branch: 'gh-pages'
+      env:
+        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
