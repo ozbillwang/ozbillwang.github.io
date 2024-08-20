@@ -20,8 +20,13 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Fix repository ownership issue
         run: git config --global --add safe.directory /github/workspace
-      - name: Update RubyGems
-        run: gem update --system
+      - name: Install RubyGems manually
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby ruby-dev
+          sudo apt-get remove rubygems-integration
+          gem install rubygems-update
+          update_rubygems
       - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
         with:                                # Some relative inputs of your action
           token: ${{ secrets.JEKYLL_PAT }}
