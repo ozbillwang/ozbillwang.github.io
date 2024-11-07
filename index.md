@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bill Wang
-subtitle: DevOps and Cloud Consultant | AWS, Kubernetes, HashiCorp Certified | Geek
+subtitle: DevOps and Cloud Consultant | AWS, Azure, Kubernetes, HashiCorp Certified | Geek
 ---
 
 ### Hello
@@ -21,3 +21,7 @@ Hello, I'm Bill Wang, and I bring a diverse range of skills and expertise to the
 * **Cloud Proficiency (AWS and Azure)**: I have in-depth knowledge of both AWS and Azure cloud platforms, making me adaptable to various cloud environments.
 * **APN (Amazon Partner Network) Involvement**: My experience extends to working within the Amazon Partner Network, ensuring a deep understanding of AWS technologies.
 * **Training and Coaching**: I'm not only skilled in these technologies but also passionate about sharing my knowledge through training and coaching, helping individuals and teams reach their full potential.
+
+### Peronal projects
+
+As the owner of [Docker Hub’s "alpine" namespace](https://hub.docker.com/u/alpine), I manage lightweight, secure images that are foundational in DevOps and SRE workflows. These images, with billions of downloads, are trusted for their efficiency and support of essential tools, in CI/CD and automation setups. This high adoption reflects their critical role in modern DevOps environments
